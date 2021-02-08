@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/photography-1850469_1920.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header ul {
+    list-style-type: none;
+    color: black;
+    /* background-color: white; */
+    font-size: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul li {
+    background-color: rgba(255, 255, 255, 0.644);
+    width: 5%;
+    text-align: center;
+    margin-top: 5%;
+    border-radius: 5px;
+    transform: rotateY(-90deg);
+    transition: 2s;
+}
+
+header ul:hover li {
+    transform: rotateY(0deg);
+}
+
+main ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30%;
+}
+
+main ul li {
+    background-color: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(94, 92, 92, 0.65);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
