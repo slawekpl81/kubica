@@ -52,7 +52,7 @@ main ul.points {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    margin-top: 20%;
+    margin-top: 18%;
 }
 
 main ul li {
@@ -69,8 +69,12 @@ main ul.points li div.photo {
     background-position: center;
     text-align: center;
 
+    cursor: pointer;
+
     padding-top: 10px;
     border-radius: 5px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     transform: rotateY(-90deg);
     transition: 2s;
@@ -110,14 +114,24 @@ main ul.points li:nth-child(6) div.photo {
 
 main ul.points li:nth-child(7) div.photo {
     text-align: center;
-    font-size: 20px;
 
     background-image: url('./img/contact.jpg');
     background-position: right;
 }
 
+main ul.points li div.photo #contact {
+    font-size: 15px;
+}
+
 main ul.points li:hover div.photo {
     transform: rotateY(0deg);
+}
+
+main ul.points li:hover div.point {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 main ul.points li div.point {
@@ -127,4 +141,8 @@ main ul.points li div.point {
     height: 20px;
     border-radius: 50%;
     margin: 5px auto;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    transition: .2s;
 }
